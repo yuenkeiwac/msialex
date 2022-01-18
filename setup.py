@@ -5,8 +5,8 @@ setup(
     version='0.1.0',
     description='Malaysia Lexicon',
     author='Khor Yuen Kei',
-    author_email='khoryk1104@gmail.com'
-    url='https://github.com/yuenkeiwac/msialex'
+    author_email='khoryk1104@gmail.com',
+    url='https://github.com/yuenkeiwac/msialex',
     license='MIT',
     install_requires=[], 
     setup_requires=['pytest-runner'], 
