@@ -7,3 +7,6 @@ def test_intensifier():
     
 def test_disjunction():
     assert modifier.disjunction('en')
+
+def test_stopword():
+    assert modifier.stopword('en')
