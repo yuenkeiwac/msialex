@@ -1,21 +1,24 @@
 # msiaLex
-# msiaLex consists of different types of modifiers from three languages (e.g. English, Bahasa Melayu, Chinese)
+msiaLex consists of different types of modifiers from three languages (e.g. English, Bahasa Melayu, Chinese)
 # Installation
 pip install msiaLex
 
 # Description on how to use modifier
 from msiaLex import modifier
 
-# Language code are required to serve as parameter for below functions
-# English : en
-# Bahasa Melayu : zsm
-# Chinese : zh
+# Language code
+Language code are required to serve as parameter for below functions in order to return modifiers for specific language
+English : en
+Bahasa Melayu : zsm
+Chinese : zh
 
-# This function return negations of English language
+# Negation
+This function return negations of English language
 >>modifier.negation('en')
 >>['no', 'not', 'none', 'nobody', 'nothing', 'neither', 'never', 'cannot']
 
-# This function return intensifiers of English language
+# Intensifier
+This function return intensifiers of English language
 >>modifier.intensifier('en')
 >>{'high': ['absolutely',
   'completely',
@@ -35,7 +38,8 @@ from msiaLex import modifier
   'super'],
  'low': ['little', 'less']}
 
-# This function return disjunctions of English language
+# Disjunction
+This function return disjunctions of English language
 >>modifier.disjunction('en')
 >>['but',
  'however',
