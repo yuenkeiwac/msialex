@@ -7,7 +7,7 @@ pip install msiaLex
 from msiaLex import modifier
 
 ## Language code
-Language code are required to serve as parameter for below functions in order to return modifiers for specific language
+Language code are required to serve as parameter for below functions in order to return modifiers for specific languages
 - English : en
 - Bahasa Melayu : zsm
 - Chinese : zh
