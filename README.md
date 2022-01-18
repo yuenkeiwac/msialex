@@ -13,14 +13,15 @@ Language code are required to serve as parameter for below functions in order to
 - Chinese : zh
 
 ## Negation
-This function return negations of English language
 > modifier.negation('en') \
- ['no', 'not', 'none', 'nobody', 'nothing', 'neither', 'never', 'cannot']
+
+['no', 'not', 'none', 'nobody', 'nothing', 'neither', 'never', 'cannot']
 
 ## Intensifier
-This function return intensifiers of English language
+High and low intensifier are returned from English language 
 >modifier.intensifier('en')\
->{'high': ['absolutely',
+
+{'high': ['absolutely',
   'completely',
   'extremely',
   'highly',
@@ -39,9 +40,9 @@ This function return intensifiers of English language
  'low': ['little', 'less']}
 
 ## Disjunction
-This function return disjunctions of English language
 >modifier.disjunction('en')\
->['but',
+
+['but',
  'however',
  'in contrast',
  'instead',
