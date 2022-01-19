@@ -39,17 +39,17 @@ High and low intensifier are returned from English language
   'super'],
  'low': ['little', 'less']}
 
-## Disjunction
->modifier.disjunction('en')
+## Conjunction
+>modifier.conjunction('en')
 
-['but',
- 'however',
- 'in contrast',
- 'instead',
- 'whereas',
- 'except that',
- 'on the contrary',
- 'conversely',
- 'nevertheless',
- 'although',
- 'alternatively']
+{'contrasting': ['but',
+  'however',
+  'in contrast',
+  'instead',
+  'whereas',
+  'except that',
+  'on the contrary',
+  'conversely',
+  'nevertheless',
+  'although',
+  'alternatively']}
