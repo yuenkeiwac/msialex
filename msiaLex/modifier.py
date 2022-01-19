@@ -4,7 +4,8 @@ def negation(lang):
     elif(lang == 'zsm'):
         return ['tidak', 'tiada', 'tak', 'bukan']
     elif(lang == 'zh'):
-        return {'不甚': {'intensity': -1, 'tag': 'd'},
+        return {
+                '不甚': {'intensity': -1, 'tag': 'd'},
                 '别无': {'intensity': -1, 'tag': 'd'},
                 '并不': {'intensity': -1, 'tag': 'd'},
                 '并不会': {'intensity': -1, 'tag': 'd'},
@@ -68,9 +69,9 @@ def negation(lang):
                 '别': {'intensity': -1, 'tag': 'd'},
                 '不像': {'intensity': -1, 'tag': 'd'},
                 '不像是': {'intensity': -1, 'tag': 'd'},
-                '不比': {'intensity': -1, 'tag': 'd'}}
-        # return ['不甚', '并不', '别无', '并不会', '并不是', '并没有', '并未', '并无', '并非', '不', '不是', '不算', '不宜', '不再', '不曾', '从不', '从来未', '从没', '从没有', '从来没有', '从未', '从无', '非', '毫不', '毫无', '难', '假装', '决不', '决不能', '绝非', '没', '没法', '没什么', '没有', '难以', '难于', '尚未', '说不上', '算不上', '才怪', '太过', '未曾', '无', '无法', '永不', '有待', '勿', '不必', '不用', '不能', '不会', '不便', '未', '未能', '无须', '绝不', '无需', '未必', '不怎么', '不见得', '木有', '别', '不像', '不像是', '不比']
-
+                '不比': {'intensity': -1, 'tag': 'd'}
+                }
+        
 def intensifier(lang):
     if(lang == 'en'):
         return {
@@ -83,7 +84,8 @@ def intensifier(lang):
                 'low': ['sedikit', 'kurang']
         }
     elif(lang == 'zh'):
-        return {'百分之百': {'intensity': 5, 'tag': 'd'},
+        return {
+                '百分之百': {'intensity': 5, 'tag': 'd'},
                 '倍加': {'intensity': 5, 'tag': 'd'},
                 '入骨': {'intensity': 5, 'tag': 'd'},
                 '不得了': {'intensity': 5, 'tag': 'd'},
@@ -222,29 +224,36 @@ def intensifier(lang):
                 '轻度': {'intensity': -2, 'tag': 'd'},
                 '丝毫': {'intensity': -2, 'tag': 'd'},
                 '微': {'intensity': -2, 'tag': 'd'},
-                '相对': {'intensity': -2, 'tag': 'd'}}
-        # return ['百分之百','倍加','入骨','不得了','不可开交','充分','到头','到家','地地道道','非常','极','极度','极端','极其','极为','截然','尽','绝顶','绝对','绝对化','莫大','甚为','十二分','十分','十足','完全','完完全全','万般','万分','万万','无比','无度','无可估量','无以复加','无以伦比','已极','已甚','异常','逾常','贼','之极','之至','至极','最为','最','不过','不少','不胜','大为','多','多多','多么','分外','格外','好不','何等','不是一般','很','好','很是','很多','可','颇','颇为','甚','实在','太','太甚','特','特别','尤','尤其','尤为','着实','真','大不了','更','更加','更进一步','更为','较','较为','进一步','那般','那么','那样','如斯','益','益发','尤甚','逾','愈','愈发','愈加','愈来愈','愈益','远远','越发','越加','越来越','越是','这般','这样','足足','不为过','超','忒','多多少少','好生','或多或少','略','略加','略略','略微','略为','蛮','稍','稍稍','稍为','稍微','稍许','挺','未免','相当','一些','些微','一点','一点儿','一点点','有点','有点点','有点儿','有些','半点','不大','不丁点儿','轻度','丝毫','微','相对']
+                '相对': {'intensity': -2, 'tag': 'd'}
+                }
 
-def disjunction(lang):
+def conjunction(lang):
     if(lang == 'en'):
-        return ['but', 'however', 'in contrast', 'instead', 'whereas', 'except that', 'on the contrary', 'conversely', 'nevertheless', 'although', 'alternatively']
+        return {
+                'contrasting':['but', 'however', 'in contrast', 'instead', 'whereas', 'except that', 'on the contrary', 'conversely', 'nevertheless', 'although', 'alternatively']
+        }
     elif(lang == 'zsm'):
-        return ['tetapi', 'kecuali', 'sebaliknya', 'walaupun begitu', 'walaupun']
+        return {
+                'contrasting':['tetapi', 'kecuali', 'sebaliknya', 'walaupun begitu', 'walaupun']
+        }
     elif(lang == 'zh'):
-        return {'但': {'intensity': 3, 'tag': 'c'},
-                '但是': {'intensity': 3, 'tag': 'c'},
-                '却': {'intensity': 3, 'tag': 'c'},
-                '然而': {'intensity': 3, 'tag': 'c'},
-                '而': {'intensity': 3, 'tag': 'c'},
-                '偏偏': {'intensity': 3, 'tag': 'c'},
-                '只是': {'intensity': 3, 'tag': 'c'},
-                '就是': {'intensity': 3, 'tag': 'c'},
-                '不过': {'intensity': 3, 'tag': 'c'},
-                '可是': {'intensity': 3, 'tag': 'c'},
-                '不料': {'intensity': 3, 'tag': 'c'},
-                '岂知': {'intensity': 3, 'tag': 'c'}}
-        # return ['但', '但是', '却', '然而', '而', '偏偏', '只是', '就是', '不过', '可是', '不料', '岂知']
-
+        return {'contrasting':
+                    {
+                        '但': {'intensity': 3, 'tag': 'c'},
+                        '但是': {'intensity': 3, 'tag': 'c'},
+                        '却': {'intensity': 3, 'tag': 'c'},
+                        '然而': {'intensity': 3, 'tag': 'c'},
+                        '而': {'intensity': 3, 'tag': 'c'},
+                        '偏偏': {'intensity': 3, 'tag': 'c'},
+                        '只是': {'intensity': 3, 'tag': 'c'},
+                        '就是': {'intensity': 3, 'tag': 'c'},
+                        '不过': {'intensity': 3, 'tag': 'c'},
+                        '可是': {'intensity': 3, 'tag': 'c'},
+                        '不料': {'intensity': 3, 'tag': 'c'},
+                        '岂知': {'intensity': 3, 'tag': 'c'}
+                    }
+        }
+        
 def stopword(lang):
     if(lang == 'en'):
         return ['a','about','above','across','after','afterwards','again','against','all','almost','alone','along','already','also','although','always','am',
