@@ -1,6 +1,6 @@
 def negation(lang):
     if(lang == 'en'):
-        return ['no', 'not', 'none', 'nobody', 'nothing', 'neither', 'never', 'cannot']
+        return ['no', 'not', 'none', 'nobody', 'nothing', 'neither', 'never', 'cannot', 'suppose to', 'suppose to be', 'no longer', 'no one', 'cannot even', 'could not even']
     elif(lang == 'zsm'):
         return ['tidak', 'tiada', 'tak', 'bukan']
     elif(lang == 'zh'):
@@ -75,12 +75,12 @@ def negation(lang):
 def intensifier(lang):
     if(lang == 'en'):
         return {
-                'high':['absolutely', 'completely', 'extremely', 'highly', 'rather', 'really', 'so', 'too', 'totally', 'utterly', 'very', 'much', 'more', 'quite', 'most', 'super'],
-                'low':['little', 'less']
+                'high':['absolutely', 'completely', 'extremely', 'highly', 'rather', 'really', 'so', 'too', 'totally', 'utterly', 'very', 'much', 'more', 'quite', 'most', 'super', 'many', 'definitely', 'a lot of', 'loads of', 'lots of', 'double up', 'truly'],
+                'low':['little', 'less', 'a bit']
         }
     elif(lang == 'zsm'):
         return {
-                'high': ['terlalu', 'amat', 'sungguh', 'agak', 'sangat', 'paling', 'makin', 'lebih', 'banyak'],
+                'high': ['terlalu', 'amat', 'sungguh', 'agak', 'sangat', 'paling', 'makin', 'lebih', 'banyak', 'memang'],
                 'low': ['sedikit', 'kurang']
         }
     elif(lang == 'zh'):
@@ -281,3 +281,4 @@ def stopword(lang):
                 'various','very','via',
                 'was','we','were','what','whatever','when','whence','whenever','where','whereafter','whereas','whereby','wherein','whereupon','wherever','whether','which','while','whither','who','whoever','whole','whom','whose','why','will','with','within','without','would',
                 'yet','you','your','yours','yourself','yourselves']
+
